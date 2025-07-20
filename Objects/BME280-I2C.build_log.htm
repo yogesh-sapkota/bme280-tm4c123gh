@@ -1,0 +1,1426 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Yogesh Sapkota, Youngstown State University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\sapko\Downloads\Embedded Project\Projects\i2c-driver-bme280\BME280-I2C.uvprojx
+Project File Date:  07/20/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'TM4C123GH'
+drivers/SysTick.c(2): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  298 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  338 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  357 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  713 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  729 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  774 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  779 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  872 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  885 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  892 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  897 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  904 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  910 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  917 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  924 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  929 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  936 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  942 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  949 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  956 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  961 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  968 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  974 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  981 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  988 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  993 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1000 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1006 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1013 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1020 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1025 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1032 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1038 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1045 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1052 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1057 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1064 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1070 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1077 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1084 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1089 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1096 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1102 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1251 |   union {
+      |   ^
+drivers/SysTick.c(3): warning: In file included from...
+drivers/SysTick.h(10): warning: no newline at end of file [-Wnewline-eof]
+   10 | #endif
+      |       ^
+45 warnings generated.
+compiling SysTick.c...
+drivers/gpio.c(1): warning: In file included from...
+drivers/gpio.h(15): warning: no newline at end of file [-Wnewline-eof]
+   15 | #endif
+      |       ^
+drivers/gpio.c(2): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  298 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  338 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  357 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  713 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  729 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  774 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  779 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  872 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  885 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  892 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  897 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  904 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  910 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  917 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  924 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  929 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  936 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  942 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  949 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  956 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  961 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  968 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  974 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  981 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  988 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  993 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1000 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1006 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1013 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1020 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1025 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1032 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1038 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1045 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1052 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1057 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1064 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1070 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1077 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1084 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1089 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1096 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1102 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1251 |   union {
+      |   ^
+drivers/gpio.c(21): warning: no newline at end of file [-Wnewline-eof]
+   21 | }
+      |  ^
+46 warnings generated.
+compiling gpio.c...
+main.c(3): warning: In file included from...
+./drivers/gpio.h(15): warning: no newline at end of file [-Wnewline-eof]
+   15 | #endif
+      |       ^
+main.c(4): warning: In file included from...
+./drivers/UART.h(8): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  298 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  338 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  357 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  713 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  729 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  774 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  779 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  872 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  885 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  892 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  897 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  904 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  910 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  917 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  924 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  929 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  936 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  942 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  949 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  956 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  961 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  968 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  974 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  981 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  988 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  993 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1000 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1006 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1013 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1020 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1025 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1032 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1038 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1045 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1052 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1057 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1064 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1070 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1077 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1084 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1089 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1096 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1102 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1251 |   union {
+      |   ^
+main.c(5): warning: In file included from...
+./drivers/I2C.h(87): warning: no newline at end of file [-Wnewline-eof]
+   87 | #endif 
+      |        ^
+main.c(6): warning: In file included from...
+./drivers/PLL.h(12): warning: no newline at end of file [-Wnewline-eof]
+   12 | #endif
+      |       ^
+main.c(7): warning: In file included from...
+./drivers/SysTick.h(10): warning: no newline at end of file [-Wnewline-eof]
+   10 | #endif
+      |       ^
+main.c(8): warning: In file included from...
+./drivers/bme280.h(18): warning: no newline at end of file [-Wnewline-eof]
+   18 | #endif
+      |       ^
+main.c(17): warning: no previous extern declaration for non-static variable 'buttonState' [-Wmissing-variable-declarations]
+   17 | volatile uint8_t buttonState = 0;               //Stores current button states
+      |                  ^
+main.c(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   17 | volatile uint8_t buttonState = 0;               //Stores current button states
+      |          ^
+main.c(18): warning: no previous extern declaration for non-static variable 'buttonPressed' [-Wmissing-variable-declarations]
+   18 | volatile uint8_t buttonPressed = 0;     //Button press flag
+      |                  ^
+main.c(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   18 | volatile uint8_t buttonPressed = 0;     //Button press flag
+      |          ^
+main.c(19): warning: no previous extern declaration for non-static variable 'buttonDebounced' [-Wmissing-variable-declarations]
+   19 | volatile uint8_t buttonDebounced = 0; //Debounced state flag
+      |                  ^
+main.c(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   19 | volatile uint8_t buttonDebounced = 0; //Debounced state flag
+      |          ^
+main.c(136): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  136 |                                 uart0_tx_int32(read_pressure());
+      |                                 ~~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~
+main.c(139): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  139 |                                 uart0_tx_int32(read_humidity());
+      |                                 ~~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~
+main.c(36): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   36 |                 uint8_t bme280_id;              
+      |                         ^
+55 warnings generated.
+compiling main.c...
+drivers/PLL.c(2): warning: In file included from...
+drivers/PLL.h(4): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  298 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  338 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  357 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  713 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  729 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  774 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  779 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  872 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  885 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  892 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  897 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  904 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  910 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  917 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  924 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  929 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  936 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  942 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  949 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  956 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  961 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  968 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  974 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  981 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  988 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  993 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1000 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1006 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1013 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1020 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1025 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1032 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1038 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1045 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1052 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1057 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1064 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1070 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1077 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1084 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1089 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1096 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1102 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1251 |   union {
+      |   ^
+drivers/PLL.c(2): warning: In file included from...
+drivers/PLL.h(12): warning: no newline at end of file [-Wnewline-eof]
+   12 | #endif
+      |       ^
+drivers/PLL.c(17): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+   17 |         while((SYSCTL->RIS & 0x0000040)==0){}; //wait for PLL to lock
+      |                                              ^
+46 warnings generated.
+compiling PLL.c...
+drivers/I2C.c(2): warning: In file included from...
+drivers/I2C.h(7): warning: In file included from...
+drivers/UART.h(8): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  298 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  338 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  357 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  713 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  729 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  774 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  779 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  872 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  885 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  892 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  897 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  904 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  910 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  917 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  924 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  929 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  936 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  942 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  949 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  956 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  961 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  968 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  974 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  981 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  988 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  993 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1000 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1006 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1013 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1020 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1025 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1032 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1038 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1045 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1052 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1057 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1064 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1070 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1077 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1084 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1089 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1096 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1102 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1251 |   union {
+      |   ^
+drivers/I2C.c(2): warning: In file included from...
+drivers/I2C.h(87): warning: no newline at end of file [-Wnewline-eof]
+   87 | #endif 
+      |        ^
+drivers/I2C.c(10): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+   10 |     while((SYSCTL->RCGCGPIO & 0x02) == 0){}; 
+      |                                            ^
+drivers/I2C.c(94): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   94 |   I2C0->MSA = (device_addr << 1) | 0;                                                   // set device address and transmit  
+      |             ~ ~~~~~~~~~~~~~~~~~~~^~~
+drivers/I2C.c(143): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  143 |   I2C0->MSA = (device_addr << 1) | 0;                                                   // set device address and transmit  
+      |             ~ ~~~~~~~~~~~~~~~~~~~^~~
+drivers/I2C.c(158): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  158 |         I2C0->MSA = (device_addr << 1) | 1;
+      |                   ~ ~~~~~~~~~~~~~~~~~~~^~~
+drivers/I2C.c(111): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  111 |                 I2C0->MDR = data[i] & 0xFF;
+      |                             ^~~~
+drivers/I2C.c(185): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  185 |         data[i] = I2C0->MDR & 0xFF;
+      |         ^~~~
+51 warnings generated.
+compiling I2C.c...
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(13): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  298 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  338 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  357 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  713 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  729 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  774 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  779 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  872 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  885 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  892 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  897 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  904 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  910 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  917 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  924 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  929 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  936 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  942 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  949 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  956 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  961 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  968 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  974 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  981 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  988 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  993 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1000 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1006 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1013 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1020 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1025 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1032 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1038 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1045 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1052 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1057 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1064 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1070 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1077 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1084 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1089 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1096 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1102 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1251 |   union {
+      |   ^
+44 warnings generated.
+compiling system_TM4C123.c...
+drivers/UART.c(1): warning: In file included from...
+drivers/UART.h(8): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  298 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  338 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  357 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  713 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  729 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  774 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  779 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  872 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  885 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  892 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  897 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  904 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  910 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  917 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  924 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  929 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  936 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  942 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  949 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  956 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  961 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  968 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  974 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  981 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  988 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  993 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1000 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1006 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1013 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1020 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1025 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1032 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1038 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1045 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1052 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1057 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1064 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1070 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1077 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1084 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1089 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1096 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1102 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1251 |   union {
+      |   ^
+drivers/UART.c(28): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   28 | UART0->CTL &= ~0x301; //disable UART
+      |            ~~ ^~~~~~
+drivers/UART.c(48): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   48 |         unsigned char data = rx_buffer[rx_tail];
+      |                       ^
+drivers/UART.c(124): warning: implicit conversion changes signedness: 'int' to 'char' [-Wsign-conversion]
+  124 |         buffer[i++] = (value % 10) + '0';
+      |                     ~ ~~~~~~~~~~~~~^~~~~
+drivers/UART.c(48): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   48 |         unsigned char data = rx_buffer[rx_tail];
+      |                              ^~~~~~~~~
+drivers/UART.c(62): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   62 |                         ptr++;
+      |                         ^~~
+drivers/UART.c(71): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   71 |                         rx_buffer[rx_head] = UART0->DR & 0xFF;
+      |                         ^~~~~~~~~
+drivers/UART.c(115): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  115 |             for (i = 0; min_str[i] != '\0'; i++)
+      |                         ^~~~~~~
+drivers/UART.c(116): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  116 |                 uart0_transmit(min_str[i]);
+      |                                ^~~~~~~
+drivers/UART.c(124): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  124 |         buffer[i++] = (value % 10) + '0';
+      |         ^~~~~~
+drivers/UART.c(129): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  129 |         buffer[i++] = '-';
+      |         ^~~~~~
+drivers/UART.c(134): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  134 |         uart0_transmit(buffer[i]);
+      |                        ^~~~~~
+55 warnings generated.
+compiling UART.c...
+drivers/bme280.c(1): warning: In file included from...
+drivers/bme280.h(5): warning: In file included from...
+drivers/I2C.h(7): warning: In file included from...
+drivers/UART.h(8): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  298 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  338 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  357 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  713 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  729 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  774 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  779 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  872 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  885 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  892 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  897 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  904 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  910 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  917 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  924 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  929 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  936 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  942 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  949 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  956 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  961 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  968 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  974 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  981 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  988 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  993 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1000 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1006 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1013 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1020 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1025 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1032 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1038 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1045 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1052 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1057 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1064 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1070 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1077 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1084 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1089 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1096 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1102 |   union {
+      |   ^
+C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1251 |   union {
+      |   ^
+drivers/bme280.c(1): warning: In file included from...
+drivers/bme280.h(5): warning: In file included from...
+drivers/I2C.h(87): warning: no newline at end of file [-Wnewline-eof]
+   87 | #endif 
+      |        ^
+drivers/bme280.c(1): warning: In file included from...
+drivers/bme280.h(18): warning: no newline at end of file [-Wnewline-eof]
+   18 | #endif
+      |       ^
+drivers/bme280.c(67): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   67 |         uint8_t cntrl_meas_reg = (osrs_p << 5) | (osrs_t << 2) | power_mode;
+      |                 ~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+drivers/bme280.c(64): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   64 |         uint8_t osrs_t = 0x01;
+      |                 ^
+drivers/bme280.c(195): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  195 |         uint8_t temp_msb = uncomp_data[3];
+      |                 ^
+drivers/bme280.c(218): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  218 |         uint8_t press_msb = uncomp_data[0];
+      |                 ^
+drivers/bme280.c(240): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  240 |         uint8_t hum_msb = uncomp_data[6];
+      |                 ^
+drivers/bme280.c(160): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  160 |         dig_T1 = (uint16_t)(temp_calib_data[1]<<8 | temp_calib_data[0]);
+      |                             ^~~~~~~~~~~~~~~
+drivers/bme280.c(161): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  161 |         dig_T2 = (int16_t)(temp_calib_data[3]<<8 | temp_calib_data[2]);
+      |                            ^~~~~~~~~~~~~~~
+drivers/bme280.c(161): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  161 |         dig_T2 = (int16_t)(temp_calib_data[3]<<8 | temp_calib_data[2]);
+      |                                                    ^~~~~~~~~~~~~~~
+drivers/bme280.c(162): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  162 |         dig_T3 = (int16_t)(temp_calib_data[5]<<8 | temp_calib_data[4]);
+      |                            ^~~~~~~~~~~~~~~
+drivers/bme280.c(162): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  162 |         dig_T3 = (int16_t)(temp_calib_data[5]<<8 | temp_calib_data[4]);
+      |                                                    ^~~~~~~~~~~~~~~
+drivers/bme280.c(164): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  164 |         dig_P1 = (uint16_t)(press_calib_data[1]<<8 | press_calib_data[0]);
+      |                             ^~~~~~~~~~~~~~~~
+drivers/bme280.c(165): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  165 |         dig_P2 = (int16_t)(press_calib_data[3]<<8 | press_calib_data[2]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(165): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  165 |         dig_P2 = (int16_t)(press_calib_data[3]<<8 | press_calib_data[2]);
+      |                                                     ^~~~~~~~~~~~~~~~
+drivers/bme280.c(166): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  166 |         dig_P3 = (int16_t)(press_calib_data[5]<<8 | press_calib_data[4]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(166): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  166 |         dig_P3 = (int16_t)(press_calib_data[5]<<8 | press_calib_data[4]);
+      |                                                     ^~~~~~~~~~~~~~~~
+drivers/bme280.c(167): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  167 |         dig_P4 = (int16_t)(press_calib_data[7]<<8 | press_calib_data[6]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(167): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  167 |         dig_P4 = (int16_t)(press_calib_data[7]<<8 | press_calib_data[6]);
+      |                                                     ^~~~~~~~~~~~~~~~
+drivers/bme280.c(168): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  168 |         dig_P5 = (int16_t)(press_calib_data[9]<<8 | press_calib_data[8]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(168): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  168 |         dig_P5 = (int16_t)(press_calib_data[9]<<8 | press_calib_data[8]);
+      |                                                     ^~~~~~~~~~~~~~~~
+drivers/bme280.c(169): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  169 |         dig_P6 = (int16_t)(press_calib_data[11]<<8 | press_calib_data[10]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(169): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  169 |         dig_P6 = (int16_t)(press_calib_data[11]<<8 | press_calib_data[10]);
+      |                                                      ^~~~~~~~~~~~~~~~
+drivers/bme280.c(170): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  170 |         dig_P7 = (int16_t)(press_calib_data[13]<<8 | press_calib_data[12]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(170): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  170 |         dig_P7 = (int16_t)(press_calib_data[13]<<8 | press_calib_data[12]);
+      |                                                      ^~~~~~~~~~~~~~~~
+drivers/bme280.c(171): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  171 |         dig_P8 = (int16_t)(press_calib_data[15]<<8 | press_calib_data[14]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(171): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  171 |         dig_P8 = (int16_t)(press_calib_data[15]<<8 | press_calib_data[14]);
+      |                                                      ^~~~~~~~~~~~~~~~
+drivers/bme280.c(172): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  172 |         dig_P9 = (int16_t)(press_calib_data[17]<<8 | press_calib_data[16]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(172): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  172 |         dig_P9 = (int16_t)(press_calib_data[17]<<8 | press_calib_data[16]);
+      |                                                      ^~~~~~~~~~~~~~~~
+drivers/bme280.c(174): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  174 |         dig_H1 = (uint8_t)(press_calib_data[18]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(176): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  176 |         dig_H2 = (int16_t)(humid_calib_data[1]<<8 | humid_calib_data[0]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(177): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  177 |         dig_H3 = (uint8_t)(humid_calib_data[2]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(178): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  178 |         dig_H4 = (int16_t)(humid_calib_data[3]<<4 | humid_calib_data[4]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(178): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  178 |         dig_H4 = (int16_t)(humid_calib_data[3]<<4 | humid_calib_data[4]);
+      |                                                     ^~~~~~~~~~~~~~~~
+drivers/bme280.c(179): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  179 |         dig_H5 = (int16_t)((humid_calib_data[5]<<4) | (humid_calib_data[4]>>4));
+      |                             ^~~~~~~~~~~~~~~~
+drivers/bme280.c(179): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  179 |         dig_H5 = (int16_t)((humid_calib_data[5]<<4) | (humid_calib_data[4]>>4));
+      |                                                        ^~~~~~~~~~~~~~~~
+drivers/bme280.c(180): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  180 |         dig_H6 = (uint8_t)(humid_calib_data[6]);
+      |                            ^~~~~~~~~~~~~~~~
+drivers/bme280.c(195): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  195 |         uint8_t temp_msb = uncomp_data[3];
+      |                            ^~~~~~~~~~~
+drivers/bme280.c(196): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  196 |         uint8_t temp_lsb = uncomp_data[4];
+      |                            ^~~~~~~~~~~
+drivers/bme280.c(197): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  197 |         uint8_t temp_xlsb = uncomp_data[5];
+      |                             ^~~~~~~~~~~
+drivers/bme280.c(219): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  219 |         uint8_t press_lsb = uncomp_data[1];
+      |                             ^~~~~~~~~~~
+drivers/bme280.c(220): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  220 |         uint8_t press_xlsb = uncomp_data[2];
+      |                              ^~~~~~~~~~~
+drivers/bme280.c(240): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  240 |         uint8_t hum_msb = uncomp_data[6];
+      |                           ^~~~~~~~~~~
+drivers/bme280.c(241): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  241 |   uint8_t hum_lsb = uncomp_data[7];
+      |                     ^~~~~~~~~~~
+88 warnings generated.
+compiling bme280.c...
+linking...
+Program Size: Code=5258 RO-data=842 RW-data=0 ZI-data=720  
+After Build - User command #1: C:\Keil_V5\ARM\ARMCLANG\bin\fromelf.exe --bin --output=.\Objects\BME280-I2C.bin .\Objects\BME280-I2C.axf
+".\Objects\BME280-I2C.axf" - 0 Error(s), 430 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: I2C Version: 2.4.0
+   * Component: Custom Version: 1.0.0
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::TM4C_DFP@1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_TM4C123GH
+  C:/Users/sapko/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/sapko/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include
+  C:/Users/sapko/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS Driver:I2C(API)@2.4.0
+      Include file:  CMSIS/Driver/Include/Driver_I2C.h
+
+   * Component: ARM::CMSIS Driver:I2C:Custom@1.0.0
+      Source file:   CMSIS/Driver/DriverTemplates/Driver_I2C.c
+      Include file:  CMSIS/Driver/Include/Driver_I2C.h
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+
+   * Component: Keil::Device:Startup@1.0.1
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+Build Time Elapsed:  00:00:39
+</pre>
+</body>
+</html>
